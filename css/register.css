@@ -1,0 +1,132 @@
+.register {
+    height: 80px;
+    border-bottom: 2px solid #c81623;
+}
+.register img {
+    float: left;
+    margin-top: 15px;
+}
+/* 主体部分 */
+.register_contain {
+    margin-top: 20px;
+    border: 1px solid #dfdfdf;
+}
+.register_contain .title {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    background-color: #ececec;
+}
+.register_contain .title h3 {
+    float: left;
+    font-size: 16px;
+}
+.register_contain .title span {
+    float: right;
+    font-size: 14px;
+}
+.register_contain .title span a {
+    color: #c81623;
+}
+.register_contain .content {
+    padding: 30px 0;
+    text-align: center;
+}
+.register_contain .content .from_group {
+    width: 750px;
+    margin: 0 auto;
+}
+.register_contain .content .from_item {
+    height: 40px;
+    margin-top: 20px;
+}
+.register_contain .content .from_item_text,
+.register_contain .content .from_item_tips,
+.register_contain .content .from_item_msg {
+    float: left;
+    width: 250px;
+    height: 40px;
+}
+.register_contain .content .from_item_text input:focus {
+    border: 1px solid #3aa2e4;
+}
+.register_contain .content .from_item_text input {
+    width: 228px;
+    height: 33px;
+    padding: 0 10px;
+    margin-top: 2px;
+    border: 1px solid #999999;
+}
+.register_contain .content .from_item_tips {
+    padding-right: 10px;
+    width: 240px;
+    line-height: 40px;
+    text-align: right;
+}
+.register_contain .content .from_item_msg {
+    padding-left: 10px;
+    width: 240px;
+    line-height: 40px;
+    text-align: left;
+    color: #c81623;
+}
+.register_contain .content .from_item_msg::before  {
+    content: '\ea0d';
+    font: normal 400 18px/40px 'icomoon';
+    margin: 0 3px 0 0;
+    float: left;
+}
+/* 安全程度 */
+.from_group .secure {
+    margin: 6px auto 0;
+    width: 250px;
+}
+.from_group .secure .gray {
+    float: right;
+    margin: 0 10px;
+    color: #bebebe;
+}
+.from_group .secure .levels {
+    float: right;
+}
+.from_group .secure .levels .red,
+.from_group .secure .levels .green,
+.from_group .secure .levels .yellow {
+    padding: 0 10px;
+    color: rgba(255,255,255,.8);
+}
+.from_group .secure .levels .red {
+    background-color: #de1111;
+}
+.from_group .secure .levels .green {
+    background-color: #40b83f;
+}
+.from_group .secure .levels .yellow {
+    background-color: #f79100;
+}
+.register_contain .agreement {
+    position: relative;
+    width: 250px;
+    margin: 40px auto;
+    text-align: left;
+}
+.register_contain .agreement input {
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+.register_contain .agreement label {
+    margin-left: 15px;
+}
+.register_contain .agreement a {
+    color: #1ba1e6;
+}
+.register_contain .content > input {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: #de1111;
+    color: rgba(255,255,255,.8);
+    font-size: 14px;
+    cursor: pointer;
+}

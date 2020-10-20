@@ -1,0 +1,125 @@
+nav {
+    height: 45px;
+    padding-top: 20px;
+    border-bottom: 2px solid #e2162f;
+}
+.nav .nav_left {
+    float: left;
+    font: normal 700 16px/45px 'Microsoft YaHei';
+}
+.nav .nav_left a {
+    margin: 0 28px;
+}
+.nav ul {
+    float: left;
+    margin: 0 20px;
+}
+.nav ul li {
+    float: left;
+    margin: 0 23px;
+    height: 45px;
+    line-height: 45px;
+}
+.nav ul li:nth-child(2) a {
+    color: #e2162f;
+}
+.nav > a {
+    float: left;
+    font: normal 400 14px/45px 'Microsoft YaHei';
+}
+.nav > a::after {
+    content: '\ea51';
+    font: normal 400 14px/45px 'icomoon';
+    margin-left: 3px;
+}
+/* 背景 */
+.bg_list {
+    height: 120px;
+}
+.bg_list img {
+    width: 1200px;
+    height: 120px;
+}
+/* 商品列表 */
+.products_list ul {
+    margin-top: 25px;
+}
+.products_list li {
+    float: left;
+    width: 291px;
+    height: 460px;
+    margin-right: 12px;
+}
+.products_list li:nth-child(4n) {
+    margin-right: 0;
+}
+.products_list li .list_img {
+    text-align: center;
+    overflow: hidden;
+}
+.products_list li .list_img img {
+    transition: all .6s;
+}
+.products_list li .list_img img:hover {
+    transform: scale(1.1);
+}
+.products_list li .list_text {
+    margin: 12px;
+}
+.products_list li .list_text p {
+    padding-bottom: 12px;
+}
+.products_list li .list_text p.price {
+    color: #e2162f;
+}
+.products_list li .list_text p.price strong {
+    font-size: 18px;
+}
+.products_list li .list_text p.price span {
+    margin-left: 5px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+}
+.products_list li .list_text p.amount {
+    overflow: hidden;
+    padding-bottom: 0;
+}
+.products_list li .list_text p.amount img {
+    margin: 0 10px -3px;
+}
+.products_list li .list_text p.amount em {
+    font-style: normal;
+    color: #e2162f;
+}
+.products_list li .purchase a{
+    display: inline-block;
+    height: 45px;
+    width: 100%;
+    background-color: #e2162f;
+    font: normal 400 16px/45px 'Microsoft YaHei';
+    text-align: center;
+    color: rgba(255,255,255,.8);
+}
+/* 列表页码 */
+.products_list .page {
+    margin-top: 30px;
+    text-align: center;
+}
+.products_list .page  a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    border: 1px solid rgba(0,0,0,.2);
+    background-color:#f5f5f5;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.products_list .page .arrow_l,
+.products_list .page .arrow_r {
+    width: 80px;
+}
+.products_list .page .current {
+    background-color: #fff;
+}

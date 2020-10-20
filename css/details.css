@@ -1,0 +1,296 @@
+/* 导航栏 */
+nav {
+    height: 45px;
+    margin-top: 20px;
+    border-bottom: 2px solid #b1191a;
+} 
+nav .all {
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+    text-align: center;
+    color: rgba(255,255,255,.8);
+    font: normal 400 16px/45px '微软雅黑';
+}
+nav ul {
+    float: left;
+}
+nav ul li {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 25px;
+    font: normal 400 16px/45px '微软雅黑';
+}
+/* 主体部分 */
+.details_contain {
+    height: 600px;
+    padding: 25px 0 30px 0;
+}
+/* 左侧图片展示 */
+.details_contain .exhibition {
+    float: left;
+    width: 450px;
+    height: 600px;
+    margin-right: 30px;
+}
+.details_contain .exhibition p span:first-child {
+    color: #000;
+}
+.details_contain .exhibition p {
+    margin-bottom: 8px;
+    height: 18px;
+    line-height: 18px;
+}
+.details_contain .exhibition p span {
+    margin-right: 15px;
+}
+.details_contain .exhibition p span::before {
+    content: '\ea50';
+    font-family: 'icomoon';
+    margin-right: 15px;
+}
+.details_contain .exhibition p span:first-child::before {
+    content: '';
+    margin-right: 0;
+}
+.details_contain .exhibition .exhibition_all {
+    width: 400px;
+}
+.exhibition .exhibition_all .exhibition_img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ededed;
+    margin-bottom: 60px;
+}
+.exhibition .exhibition_all .exhibition_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.exhibition .thumbnail {
+    position: relative;
+}
+.exhibition .thumbnail ul {
+    width: 292px;
+    height: 60px;
+    margin: auto;
+}
+.exhibition .thumbnail li {
+    float: left;
+}
+.exhibition .thumbnail li a {
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    text-align: center;
+}
+.exhibition .thumbnail li:first-child a {
+    border: 1px solid #b1191a;
+}
+.exhibition .thumbnail::before {
+    content: '\ea50';
+    font: normal 400 48px/60px 'icomoon';
+    position: absolute; 
+    left: 0;
+}
+.exhibition .thumbnail::after {
+    content: '\ea52';
+    font: normal 400 48px/60px 'icomoon';
+    position: absolute; 
+    right: 0;
+    top: 0;
+}
+.exhibition .function {
+    height: 20px;
+    margin-top: 25px;
+}
+.exhibition .function span {
+    margin-right: 30px;
+}
+.exhibition .function .share::before,
+.exhibition .function .attention::before {
+    font-family: 'icomoon';
+    margin-right: 5px;
+    color: #b1191a;
+}
+.exhibition .function .share::before {
+    content: '\ea82';
+}
+.exhibition .function .attention::before {
+    content: '\e9d7';
+}
+.exhibition .function .contrast {
+    float: right;
+    position: relative;
+}
+.exhibition .function .contrast input {
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+.exhibition .function .contrast label {
+    padding-left: 20px;
+} 
+/* 右侧详情 */
+.details_contain .particulars {
+    float: right;
+    width: 720px;
+    height: 600px;
+}
+.details_contain .particulars > h3 {
+    margin: 15px 0 10px;
+}
+.details_contain .particulars .recommend {
+    color: #e12228;
+    margin-bottom: 15px;
+}
+.details_contain .particulars .prompt {
+    height: 105px;
+    padding: 5px 8px;
+    background-color: #fee9eb;
+}
+.details_contain .particulars .prompt > div {
+    margin-bottom: 10px;
+    width: 710px;
+    line-height: 24px;
+}
+.details_contain .particulars .prompt .right_indent {
+    padding-right: 90px;
+    width: 555px;
+}
+.subtitle {
+    float: left;
+    width: 55px;
+    margin-right: 10px;
+}
+.details_contain .particulars .prompt_explain {
+    float: left;
+    width: 645px;
+}
+.details_contain .particulars .prompt .price {
+    color: #e12228;
+}
+.details_contain .particulars .prompt .price strong {
+    font-size: 16px;
+}
+.details_contain .particulars .prompt .evaluation {
+    float: right;
+    margin-right: 10px;
+    color: #999999;
+}
+.details_contain .particulars .prompt .amount {
+    float: right;
+    color: #1474af;
+}
+.details_contain .particulars .prompt .promotion {
+    display: inline-block;
+    height: 24px;
+    padding: 0 3px;
+    margin-right: 10px;
+    background-color: #c81623;
+    color: rgba(255,255,255,.8);
+}
+.details_contain .particulars .prompt .activity {
+    color: #999999;
+}
+.particulars_choose {
+    padding: 0 5px;
+}
+.particulars_choose .support {
+    margin-top: 12px;
+    width: 535px;
+    overflow: hidden;
+    /* height: 18px; */
+}
+.particulars_choose .support .subtitle_text {
+    float: left;
+    width: 470px;
+    color:#999999
+}
+.particulars_choose .support .subtitle_text p {
+    margin-bottom: 10px;
+}
+.particulars_choose .support .address::after {
+    content: '\ea51';
+    font: normal 700 12px/18px 'icomoon';
+    margin: 0 5px;
+}
+.particulars_choose .selects {
+    padding: 15px 0;
+    border-top: 1px solid #ededed;
+}
+.particulars_choose .selects .selects_box {
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 6px;
+}
+.particulars_choose .selects .selects_box ul {
+    float: left;
+}
+.particulars_choose .selects .selects_box li {
+    float: left;
+    margin-right: 8px;
+    text-align: center;
+}
+.particulars_choose .selects .selects_box a {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    border: 1px solid #ededed;
+    background-color: #f7f7f7;
+}
+.particulars_choose .selects .selects_box a:hover {
+    border-color: #c81623;
+}
+.particulars .purhase {
+    height: 45px;
+}
+.particulars .purhase .counter,
+.particulars .purhase .pruhase_car {
+    float: left;
+    height: 45px;
+    text-align: center;
+    margin-right: 10px;
+}
+.particulars .purhase .counter {
+    width: 50px;
+}
+.particulars .purhase .number {
+    float: left;
+    width: 33px;
+    height: 43px;
+    line-height: 43px;
+    border: 1px solid #cccccc;
+}
+.particulars .purhase .add,
+.particulars .purhase .reduce {
+    float: left;
+    width: 14px;
+    height: 21px;
+    line-height: 22px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.particulars .purhase .add {
+    border-top: 1px solid  #cccccc;
+    border-right: 1px solid  #cccccc;
+}
+.particulars .purhase .reduce {
+    height: 21px;
+    border: 1px solid #cccccc;
+    border-left: none;
+}
+.particulars .purhase .purhase_car input {
+    float: left;
+    width: 140px;
+    height: 45px;
+    background-color: #c81623;
+    color: rgba(255,255,255,.8);
+    font: normal 700 16px/45px 'Microsoft YaHei';
+    cursor: pointer;
+}

@@ -1,0 +1,247 @@
+.search {
+    position: relative !important;
+    left: 0 !important;
+    transform: translate(0) !important;
+    float: right;
+}
+.shortcut .menu li:last-child {
+    padding-right: 0;
+}
+.header .name {
+    float: left;
+    height: 58px;
+    font: normal 700 16px/58px 'Microsoft YaHei';
+    margin-left: 20px;
+}
+.shortcut_title {
+    height: 50px;
+    font: normal 400 14px/50px 'Microsoft YaHei';
+}
+/* 订单主体 */
+.indent_contain {
+    padding: 15px 25px;
+    border: 1px solid #dddddd;
+}
+.indent_contain .receiver {
+    padding: 16px 25px;
+    border-bottom: 1px solid #ededed;
+}
+.receiver .head {
+    margin-bottom: 15px;
+}
+.receiver .head h3 {
+    float: left;
+}
+.receiver .head a {
+    float: right;
+    color: #1474af;
+}
+.receiver .address {
+    padding: 0 20px;
+}
+.receiver .address input, .self_address input {
+    float: left;
+    width: 140px;
+    height: 26px;
+    margin: 0 10px 16px 0;
+    border: 2px solid #c81623;
+    background-color: #fff;
+    font-size: 12px;
+}
+.receiver .address p, .self_address p {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.receiver .address .more_address {
+    clear: both;
+}
+.receiver .address .more_address a::after {
+    content: '\ea51';
+    font-family: 'icomoon';
+    vertical-align: top;
+    margin: -5px 0 0 5px;
+}
+.self_address {
+    padding: 16px 45px;
+    border-bottom: 1px solid #ededed;
+}
+.self_address input {
+    border: 1px solid #dddddd;
+    margin-bottom: 0;
+}
+.indent_contain .pay {
+    padding: 16px 25px;
+    border-bottom: 1px solid #ededed;
+    line-height: 30px;
+}
+.pay h3 {
+    margin-bottom: 15px;
+}
+.pay .pay_input {
+    float: left;
+    padding: 0 20px;
+}
+.pay .pay_input input {
+    float: left;
+    width: 98px;
+    height: 28px;
+    border: 1px solid #dddddd;
+    background-color: #fff;
+    font-size: 12px;
+}
+.pay .pay_input input:nth-child(2) {
+    border-left: 0;
+    border-right: 0;
+}
+.pay .pay_input input:last-child {
+    border: 2px solid #c81623;
+}
+.pay > a {
+    float: left;
+}
+.deliver {
+    padding: 16px 0;
+    border-bottom: 1px solid #ededed;
+}
+.deliver h3 {
+    margin: 0 0 15px 25px;
+}
+.deliver .deliver_way {
+    height: 70px;
+    margin-bottom: 1px;
+    padding: 15px 25px;
+    background-color: #f4f4f4;
+}
+.deliver .deliver_way h4,
+.deliver .deliver_mode h4 {
+    margin-bottom: 15px;
+}
+.deliver .deliver_way input {
+    float: left;
+    width: 140px;
+    height: 26px;
+    margin:0 45px 0 20px;
+    border: 2px solid #c81623;
+    background-color: #fff;
+    font-size: 12px;
+}
+.deliver .deliver_way p {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.deliver .deliver_way a {
+    float: right;
+    margin-top: 5px;
+    color: #1474af;
+}
+.deliver .deliver_mode {
+    height: 124px;
+    padding: 15px 25px;
+    background-color: #feedef;
+}
+.deliver .deliver_mode .deliver_msg {
+    padding-left: 20px;
+    height: 82px;
+}
+.deliver .deliver_mode .deliver_msg .deliver_img {
+    float: left;
+    margin-right: 100px;
+}
+.deliver .deliver_mode .deliver_msg .text {
+    float: left;
+    width: 336px;
+    line-height: 20px;
+}
+.deliver .deliver_mode .deliver_msg .text .return {
+    margin-top: 15px;
+    color: #df3033;
+}
+.deliver .deliver_mode .deliver_msg  .message {
+    float: right;
+    margin-top: 10px;
+}
+.deliver .deliver_mode .deliver_msg span {
+    margin-right: 60px;
+}
+.deliver .deliver_mode .deliver_msg .price {
+    color: #df3033;
+    font-weight: bold;
+}
+.invoice h3 {
+    padding: 15px 25px;
+}
+.invoice p {
+    padding-left: 45px;
+}
+.invoice p span {
+    margin-right: 25px;
+}
+.invoice p a {
+    color: #1474af;
+}
+.invoice h3.discount::after {
+    content: '\ea51';
+    font-family: 'icomoon';
+    margin-left: 5px;
+}
+.clearing {
+    float: right;
+    width: 260px;
+    height: 60px;
+    margin: 15px 25px;
+}
+.clearing .money {
+    height: 20px;
+    line-height: 20px;
+}
+.clearing .money .money_left,
+.clearing .money .money_right {
+    width: 130px;
+    text-align: right;
+}
+.clearing .money .money_left {
+    float: left;
+}
+.clearing .money .money_right {
+    float: right;
+}
+.clearing .money .color {
+    color: #df3033;
+}
+.total {
+    height: 40px;
+    padding: 15px 25px;
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+}
+.total .total_text {
+    float: right;
+}
+.total p {
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+}
+.total p span {
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #df3033;
+}
+.total p.total_address {
+    color: #999999;
+}
+.submit {
+    margin: 15px 30px;
+    margin-bottom: 0;
+    float: right;
+}
+.submit input {
+    width: 140px;
+    height: 45px;
+    background-color: #df3033;
+    font: normal 700 16px/45px 'Microsoft YaHei';
+    color: rgba(255,255,255,.9);
+}

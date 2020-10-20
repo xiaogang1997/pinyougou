@@ -1,0 +1,33 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input, table, td {
+    margin:0;
+    padding:0;
+} 
+li {
+    list-style: none;
+}
+input {
+    outline: none;
+    border: none;
+}
+/* 默认字体 */
+body {
+    font: normal 400 12px/18px '微软雅黑';
+    color: #666666;
+}
+/* 默认a连接样式 */
+a {
+    text-decoration: none;
+    color: #666666;
+}
+a:hover {
+    color: #c81623;
+}
+/* 清除浮动 */
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}

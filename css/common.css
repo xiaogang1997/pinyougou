@@ -1,0 +1,205 @@
+/* 版心 */
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 快速导航栏 */
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+}
+.shortcut .login {
+    float: left;
+}
+.shortcut .login li {
+    float: left;
+    padding-right: 10px;
+}
+.shortcut .login .register a {
+    color: #c81623;
+}
+.shortcut .menu {
+    float: right;
+    margin-top: 8px;
+}
+.shortcut .menu li {
+    float: left;
+    padding: 0 15px;
+    height: 14px;
+    line-height: 14px;
+}
+.shortcut .menu li:nth-child(even) {
+    border-left: 1px solid #666666;
+    border-right: 1px solid #666666;
+}
+.shortcut .menu .icon::after {
+    content: '\ea51';
+    margin-left: 5px;
+    font: normal 400 12px 'icomoon';
+}
+/* 字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ahxpjc');
+    src:  url('../fonts/icomoon.eot?ahxpjc#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ahxpjc') format('truetype'),
+      url('../fonts/icomoon.woff?ahxpjc') format('woff'),
+      url('../fonts/icomoon.svg?ahxpjc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+/* 头部 */
+.header {
+    position: relative;
+    padding-top: 25px;
+    height: 58px;
+    overflow: hidden;
+}
+.header .logo {
+    float: left;
+}
+.header .logo a {
+    display: inline-block;
+    width: 172px;
+    height: 61px;
+    overflow: hidden;
+}
+.header .search {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 536px;
+    height: 35px;
+    text-align: center;
+}
+.header .search input[type="search"] {
+    float: left;
+    width: 450px;
+    height: 100%;
+    padding-left: 10px;
+    border: 2px solid #c81623;
+}
+.header .search input[type="button"] {
+    float: left;
+    width: 86px;
+    height: 35px;
+    background-color: #c81623;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+.header .hotwords {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.header .hotwords li {
+    float: left;
+    padding: 0 10px;
+}
+.header .hotwords li:first-child a {
+    color: #c81623;
+}
+.header .shopcar {
+    float: right;
+    position: relative;
+    width: 140px;
+    height: 35px;
+    margin-right: 35px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.shopcar a {
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 10px;
+}
+.shopcar a::before {
+    content: '\e93a';
+    margin:0 5px 0 0;
+    font: normal 400 12px 'icomoon';
+    color: #c81623;
+}
+.shopcar a::after {
+    content: '\ea52';
+    font: normal 400 14px 'icomoon';
+    color: #a5a5a5;
+    vertical-align: middle;
+}
+.shopcar .shop_number {
+    position: absolute;
+    top: -10px;
+    left: 100px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    background-color: #c81623;
+    color: rgba(255,255,255,.8);
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+}
+/* 底部区域 */
+.footer_index {
+    margin-top: 40px;
+    background-color: #f5f5f5;
+}
+/* 服务模块 */
+footer .service {
+    height: 107px;
+    border-bottom: 1px solid #dfdfdf;
+}
+footer .service li {
+    float: left;
+    width: 240px;
+    height: 55px;
+   margin: 26px 0;
+}
+footer .service li img {
+    float: left;
+    margin: 0 5px 0 35px;
+}
+footer .service li .service_text {
+    float: left;
+}
+.service li .service_text p {
+    font: normal 700 16px/30px '微软雅黑';
+}
+/* 帮组中心 */
+footer .help {
+    padding: 20px 0;
+    border-bottom: 1px solid #dfdfdf;
+}
+.help dl {
+   float: left;
+   width: 150px;
+   padding-left: 50px;
+}
+.help dt {
+    font: normal 400 16px/30px '微软雅黑';
+}
+.help dd {
+   line-height: 18px;
+}
+.help dd img {
+    margin-left: -12px;
+}
+/* 底部版权 */
+footer .copyright {
+   padding: 20px 0 30px 0;
+   text-align: center;
+   background-color: transparent;
+}
+.copyright .links {
+    margin-bottom: 10px;
+}
+.copyright .links a {
+   margin: 0 12px;
+}
+.copyright p {
+   margin-bottom: 2px;
+}

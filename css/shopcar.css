@@ -1,0 +1,256 @@
+.search {
+    position: relative !important;
+    left: 0 !important;
+    transform: translate(0) !important;
+    float: right;
+}
+.shortcut .menu li:last-child {
+    padding-right: 0;
+}
+.header .name {
+    float: left;
+    height: 58px;
+    font: normal 700 16px/58px 'Microsoft YaHei';
+    margin-left: 20px;
+}
+.shortcut_title {
+    height: 50px;
+    font: normal 400 14px/50px 'Microsoft YaHei';
+    color: #c81523;
+}
+/* 商品全选 */
+.check_all {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #dddddd;
+}
+.check_all_input {
+    float: left;
+}
+.check_all_input input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.check_all .products {
+    float: left;
+    margin-left: 200px;
+}
+.check_all ul {
+    float: right;
+}
+.check_all ul li {
+    float: left;
+    width: 160px;
+    text-align: center;
+}
+.shopTitle {
+    padding: 18px 0 5px 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dddddd;
+}
+.shopTitle .checkShop {
+    float: left;
+}
+.shopTitle .checkShop input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.shopTitle_style {
+    background-color: #c81623;
+    padding: 0 3px;
+    color: rgba(255,255,255,.8);
+}
+.shopTitle p {
+    float: right;
+}
+.shopTitle .freight {
+    color: #c81623;
+}
+.shopProducts {
+    border: 1px solid #dddddd;
+}
+.shopProducts > li {
+    /* height: 85px; */
+    padding: 10px 5px;
+    border-bottom: 1px solid #dddddd;
+}
+.shopProducts > li:last-child {
+    border-bottom: none;
+}
+.shopProducts_top {
+    float: left;
+    width: 535px;
+}
+.shopProducts_bottom {
+    float: left;
+    margin: 15px 0 0 60px;
+}
+.shopProducts_bottom a {
+    color: #999999;
+}
+.shopProducts_bottom span {
+    margin-left: 30px;
+}
+.shopProducts .shopProducts_left {
+    float: left;
+    color: #333333;
+}
+.shopProducts .exchange {
+    float: left;
+    height: 20px;
+    width: 535px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.shopProducts .exchange input {
+    float: left;
+    height: 20px;
+    margin-right: 15px;
+    padding: 0 10px;
+    border: 1px solid #c81623;
+    background-color: transparent;
+    color: #c81623;
+}
+.shopProducts .exchange p {
+    float: left;
+    width: 460px;
+}
+.shopProducts .exchange p em {
+    font-style: normal;
+    background-color: #c81623;
+    padding: 1px 5px;
+    color: rgba(255,255,255,.8);
+    margin: 0 5px 0 20px;
+}
+.shopProducts .exchange p span::after {
+    content: '\ea52';
+    font-family: 'icomoon';
+}
+.shopProducts .shopProducts_left .select {
+    float: left;
+    margin-right: 15px;
+}
+.shopProducts .shopProducts_left .msg {
+    float: left;
+}
+.shopProducts .shopProducts_left .msg .msg_img {
+    float: left;
+}
+.shopProducts .shopProducts_left .msg .msg_text {
+    float: left;
+    margin: 0 30px 0 10px;
+    width: 210px;
+}
+.shopProducts_left .msg .msg_text p {
+    line-height: 20px;
+}
+.shopProducts_left .msg .msg_text .gift {
+    color: #999999;
+    margin-top: 2px;
+    height: 18px;
+    line-height: 18px;
+}
+.shopProducts_left .msg .msg_text .gift::before {
+    content: '\e99f';
+    font-family: 'icomoon';
+    background-color: #c81623;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    text-align: center;
+    color: rgba(255,255,255,.8);
+}
+.shopProducts .shopProducts_left .parameter {
+    float: left;
+    width: 165px;
+}
+.shopProducts .shopProducts_right {
+    float: right;
+}
+.shopProducts_right li {
+    float: left;
+    width: 160px;
+    padding-top: 5px;
+    text-align: center;
+}
+.shopProducts_right li.subtotal {
+    font-weight: 700;
+}
+.shopProducts_right .number {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: -5px;
+}
+.shopProducts_right li p.available {
+    color: #999999;
+}
+.shopProducts_right .number input,
+.shopProducts_right .number a {
+    float: left;
+}
+.shopProducts_right .number input[type="text"] {
+    width: 40px;
+    height: 28px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+.shopProducts_right .number a {
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    line-height: 28px;
+    font-size: 18px;
+}
+.shopProducts_right .number a.add {
+    color: #c81623;
+}
+/* 结算 */
+.payment {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 5px;
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+}
+.payment .payment_input {
+    float: left;
+    margin-right: 20px;
+}
+.payment .links {
+    float: left;
+}
+.payment .links a {
+    margin-right: 10px;
+}
+.payment .checklist {
+    float: right;
+    margin-top: 5px;
+}
+.payment .checklist p {
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+}
+.payment .checklist p  .total {
+    font-weight: 700;
+    color: #c81623;
+    margin-right: 30px;
+    font-size: 14px;
+}
+.payment .checklist p .save {
+    margin-right: 70px;
+}
+.payment .account input {
+    float: right;
+    width: 110px;
+    height: 50px;
+    background-color: #c81623;
+    font: normal 700 14px/50px 'Microsoft YaHei';
+    color: rgba(255,255,255,.8);
+}
