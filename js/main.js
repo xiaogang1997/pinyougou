@@ -1,5 +1,5 @@
 $(function(){
-    // 首页轮播图
+    // ***********************************首页轮播图 
     function lunbo(){
         // 获取所有图片li
         var imgs = $(".banner").children(".list_img").find("li");
@@ -57,7 +57,7 @@ $(function(){
         })
     }
     lunbo();
-//  购物车页面功能
+// ******************************* 购物车页面功能
     function shopcar(){
         // 当点击增加按钮时 商品数量增加 小计总额也同时增加
         var subtotal = null;
