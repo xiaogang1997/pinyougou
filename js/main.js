@@ -113,4 +113,25 @@ $(function(){
         });
     }
     shopcar()
+
+    // ******************** 侧栏回到顶部
+    function backTop() {
+        var sideBar = document.querySelector('#sideBar');
+        var oimg = document.querySelector('#sideBar img');
+        window.onscroll = function() {
+            if(document.documentElement.scrollTop >= 500) {
+                sideBar.style.display = 'block';
+            }else {
+                sideBar.style.display = 'none';
+            }
+        }
+        oimg.onmouseover = function(){
+            this.src = './images/top.gif';
+            this.onclick = function() {
+                // $("body,html").animate({scrollTop:"0"});
+                document.documentElement.scrollTop = 0;
+            }
+        }
+    }
+    backTop();
 })

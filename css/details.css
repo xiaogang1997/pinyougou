@@ -65,12 +65,34 @@ nav ul li {
     border: 1px solid #ededed;
     margin-bottom: 60px;
 }
-.exhibition .exhibition_all .exhibition_img img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+#img {
+    width: 100%;
     cursor: pointer;
+}
+#mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background: pink;
+    opacity: .5;
+    display: none;
+} 
+.exhibition_img .plusBox {
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ededed;
+    overflow: hidden;
+    display: none;
+}
+#plusImg {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .exhibition .thumbnail {
     position: relative;

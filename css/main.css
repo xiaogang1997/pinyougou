@@ -483,3 +483,12 @@ aside > img {
 }
 /* 主体区域结束 */
  
+/* ***** 侧栏回到顶部 ****** */
+#sideBar {
+    position: fixed;
+    left: 50%;
+    margin-left: 620px;
+    bottom: 80px;
+    display: none;
+    cursor: pointer;
+}
