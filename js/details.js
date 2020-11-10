@@ -20,7 +20,7 @@ window.addEventListener('load',function(){
                 var Y = e.pageY - imgBox.offsetTop;
                 // 遮罩层偏移量
                 var moveX = X - mask.offsetWidth/2;
-                var moveY = Y - mask.offsetHeight/2
+                var moveY = Y - mask.offsetHeight/2;
                 // 遮罩层最大偏移量
                 var maxX = imgBox.offsetWidth - mask.offsetWidth;
                 // 给遮罩层添加偏移量 且让鼠标在遮罩层的中间

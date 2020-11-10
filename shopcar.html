@@ -51,7 +51,7 @@
     <section class="wrap">
         <div class="check_all">
             <div class="check_all_input">
-                <input type="checkbox" name="" id="check_all">
+                <input type="checkbox" name="" class="inputAll">
                 <label for="check_all">全选</label>
             </div>
             <div class="products">商品</div>
@@ -63,23 +63,22 @@
             </ul>
         </div>
     </section>
-
     <!-- 商品部分 -->
     <section class="shopcar_contain wrap">
-        <div class="shopTitle clearfix">
+        <!-- <div class="shopTitle clearfix">
             <div class="checkShop">
-                <input type="checkbox" id="chuanzhi">
+                <input type="checkbox" class="checks" >
                 <label for="chuanzhi"><span class="shopTitle_style">传智自营</span></label>
             </div>
             <p>
                 运费: ￥6.00<span class="freight">&nbsp;&nbsp;还差&nbsp;¥99.00免运费</span>
             </p>
-        </div>
+        </div> -->
         <ul class="shopProducts">
             <li class="clearfix">
                 <div class="shopProducts_left">
                     <div class="select">
-                        <input type="checkbox">
+                        <input type="checkbox" class="checks">
                     </div>
                     <div class="msg">
                         <div class="msg_img">
@@ -110,7 +109,7 @@
                         </li>
                         <li class="subtotal">248.00</li>
                         <li>
-                            <p><a href="javascript:;">删除</a></p>
+                            <p><a href="javascript:;" class="delCur">删除</a></p>
                             <p><a href="javascript:;">移到我的关注</a></p>
                         </li>
                     </ul>
@@ -119,7 +118,7 @@
             <li class="clearfix">
                 <div class="shopProducts_left">
                     <div class="select">
-                        <input type="checkbox">
+                        <input type="checkbox" class="checks">
                     </div>
                     <div class="msg">
                         <div class="msg_img">
@@ -148,7 +147,7 @@
                         </li>
                         <li class="subtotal">199.00</li>
                         <li>
-                            <p><a href="javascript:;">删除</a></p>
+                            <p><a href="javascript:;" class="delCur">删除</a></p>
                             <p><a href="javascript:;">移到我的关注</a></p>
                         </li>
                     </ul>
@@ -164,7 +163,7 @@
                     </div>
                     <div class="shopProducts_left">
                         <div class="select">
-                            <input type="checkbox">
+                            <input type="checkbox" class="checks">
                         </div>
                         <div class="msg">
                             <div class="msg_img">
@@ -191,14 +190,14 @@
                         <li class="num_price">
                             <div class="number clearfix">
                                 <a href="javascript:;" class="reduce">-</a>
-                                <input type="text" name="" class="Products_num" value="3">
+                                <input type="text" name="" class="Products_num" value="1">
                                 <a href="javascript:;" class="add">+</a>
                             </div>
                             <p class="available">有货</p>
                         </li>
-                        <li class="subtotal">744.00</li>
+                        <li class="subtotal">248.00</li>
                         <li>
-                            <p><a href="javascript:;">删除</a></p>
+                            <p><a href="javascript:;" class="delCur">删除</a></p>
                             <p><a href="javascript:;">移到我的关注</a></p>
                         </li>
                     </ul>
@@ -207,7 +206,7 @@
             <li class="clearfix">
                 <div class="shopProducts_left">
                     <div class="select">
-                        <input type="checkbox">
+                        <input type="checkbox" class="checks">
                     </div>
                     <div class="msg">
                         <div class="msg_img">
@@ -236,7 +235,7 @@
                         </li>
                         <li class="subtotal">180.00</li>
                         <li>
-                            <p><a href="javascript:;">删除</a></p>
+                            <p><a href="javascript:;" class="delCur">删除</a></p>
                             <p><a href="javascript:;">移到我的关注</a></p>
                         </li>
                     </ul>
@@ -244,7 +243,7 @@
             </li>
         </ul>
         <!-- 神州数码专营店 -->
-        <div class="shopTitle clearfix">
+        <!-- <div class="shopTitle clearfix">
             <div class="checkShop">
                 <input type="checkbox" id="shenzhou">
                 <label for="shenzhou"><span class="">神州数码专营店</span></label>
@@ -301,23 +300,23 @@
                     </ul>
                 </div>
             </li>
-        </ul>
+        </ul> -->
         <!-- 结算 -->
         <div class="payment clearfix">
             <div class="payment_input">
-                <input type="checkbox" name="" id="paymentAll">
+                <input type="checkbox" name="" class="inputAll">
                 <label for="paymentAll">全选</label>
             </div>
             <div class="links">
-                <a href="javascript:;">删除选中的商品</a>
-                <a href="javascript:;">移到我的关注</a>
-                <a href="javascript:;">清除下柜商品</a>
+                <a href="javascript:;" class="del">删除选中的商品</a>
+                <a href="javascript:;" class="empty">清空购车</a>
+                <!-- <a href="javascript:;">清除下柜商品</a> -->
             </div>
             <div class="account">
                 <a href="./indent.html"><input type="button" value="结 算"></a>
             </div>
             <div class="checklist">
-                <p> 已选择0件商品&nbsp;&nbsp;&nbsp;&nbsp;总价（不含运费）: <span class="total">￥16283.00</span></p>
+                <p> 已选择<span class="sum">0</span>件商品&nbsp;&nbsp;&nbsp;&nbsp;总价（不含运费）: <span class="total">￥16283.00</span></p>
                 <p>已节省：<span class="save">-￥20.00</span></p>
             </div>
 

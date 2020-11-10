@@ -74,6 +74,7 @@ $(function(){
             // 计算商品小计 结果保留两位小数
             subtotal = (price * n).toFixed(2);
             $(this).parents(".num_price").siblings(".subtotal").text(subtotal);
+            getSum()
         });
         // 当点击减少按钮时 商品数量增加 小计总额也同时减少
         $(".number .reduce").click(function(){
@@ -81,57 +82,112 @@ $(function(){
             // 获取当前商品单价
             var price = $(this).parents(".num_price").siblings(".unit_price").text();
             n --;
-            if(n == -1){
-                return false;
-            }
+            if(n == 0) return;
             $(this).siblings(".Products_num").val(n)
             // 计算商品小计 结果保留两位小数
             subtotal = (price * n).toFixed(2);
             $(this).parents(".num_price").siblings(".subtotal").text(subtotal);
+            getSum()
         });
         // 给表单添加一个change事件
         $(".Products_num").change(function(){
             // 先获取表单值
             var n = $(this).val();
-            if(n < 0){
-                n = 0;
-                $(this).val("0");
+            if(n < 1){
+                n = 1;
+                $(this).val("1");
             }
             // 获取当前商品单价
             var price = $(this).parents(".num_price").siblings(".unit_price").text();
             // 计算商品小计 结果保留两位小数
             subtotal = (price * n).toFixed(2);
             $(this).parents(".num_price").siblings(".subtotal").text(subtotal);
+            getSum()
         });
 
+        // 计算总数量和总价
+        function getSum() {
+            var num = 0;
+            var subTotal = 0;
+            // 计算商品数量
+            $(".Products_num").each(function(index,dom){
+                num += parseInt($(dom).val());
+            });
+            console.log(num);
+            $(".payment .sum").html(num);
+            // 计算商品总价
+            $(".subtotal").each(function(index,dom){
+                subTotal += parseInt($(dom).text());
+            });
+            console.log(subTotal);
+            $(".payment .total").html(subTotal.toFixed(2));
+        }
+        getSum()
         // 购物车表单全选功能
         // 给全选按钮添加点击事件
-        $(".check_all_input").children("input").change(function(){
+        $(".inputAll").change(function(){
             // 将全选按钮的checked值赋给其他按钮
-            $(".shopProducts_left").find("input").prop("checked",$(this).prop("checked"));
-            $(".checkShop").find("input").prop("checked",$(this).prop("checked"));
+            $(".checks,.inputAll").prop("checked",$(this).prop("checked"));
+            // 当按钮被选中时 添加背景颜色
+            if($(this).prop("checked")){
+                $(".checks").parents("li").css("backgroundColor","pink");
+            }else {
+                $(".checks").parents("li").css("backgroundColor","");
+            }
+        });
+        $(".checks").change(function(){
+            // 当按钮被选中时 添加背景颜色
+            if($(this).prop("checked")){
+                $(this).parents("li").css("backgroundColor","pink");
+            }else {
+                $(this).parents("li").css("backgroundColor","");
+            }
+            var checkLength = $(".checks:checked").length;
+            if($(".checks").length == checkLength) {
+                $(".inputAll").prop("checked",true);
+            }else {
+                $(".inputAll").prop("checked",false);
+            }
+        });
+
+        // 删除商品功能
+        // 删除选中的商品
+        $(".del").click(function() {
+            $(".checks:checked").parents("li").remove();
+            getSum()
+        });
+        // 删除所有商品
+        $(".empty").click(function(){
+            $(".shopProducts").empty();
+            getSum()
+        });
+        // 删除当前商品
+        $(".delCur").click(function(){
+            $(this).parents("li").remove();
+            getSum()
         });
     }
     shopcar()
 
     // ******************** 侧栏回到顶部
-    function backTop() {
-        var sideBar = document.querySelector('#sideBar');
-        var oimg = document.querySelector('#sideBar img');
-        window.onscroll = function() {
-            if(document.documentElement.scrollTop >= 500) {
-                sideBar.style.display = 'block';
-            }else {
-                sideBar.style.display = 'none';
-            }
-        }
-        oimg.onmouseover = function(){
-            this.src = './images/top.gif';
-            this.onclick = function() {
-                // $("body,html").animate({scrollTop:"0"});
-                document.documentElement.scrollTop = 0;
-            }
-        }
-    }
-    backTop();
+    // function backTop() {
+    //     var sideBar = document.querySelector('#sideBar');
+    //     var oimg = document.querySelector('#sideBar img');
+    //     window.onscroll = function() {
+    //         if(window.pageYOffset >= 500) {
+    //             sideBar.style.display = 'block';
+    //         }else {
+    //             sideBar.style.display = 'none';
+    //         }
+    //     }
+    //     oimg.onmouseover = function(){
+    //         this.src = './images/top.gif';
+    //         this.onclick = function() {
+    //             // $("body,html").animate({scrollTop:"0"});
+    //             document.documentElement.scrollTop = 0;
+    //             // window.scroll(0,0);
+    //         }
+    //     }
+    // }
+    // backTop();
 })
